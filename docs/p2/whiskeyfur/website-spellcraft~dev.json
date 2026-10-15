@@ -8,25 +8,25 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-spellcraft.git",
-                    "reference": "6925731e215096b1827ed422b90437a26a0803e8"
+                    "reference": "f5d917b125713014db5c8a1763fc76164552486a"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-spellcraft/zipball/6925731e215096b1827ed422b90437a26a0803e8",
-                    "reference": "6925731e215096b1827ed422b90437a26a0803e8",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-spellcraft/zipball/f5d917b125713014db5c8a1763fc76164552486a",
+                    "reference": "f5d917b125713014db5c8a1763fc76164552486a",
                     "shasum": ""
                 },
                 "require": {
                     "illuminate/database": "^13.0",
                     "illuminate/support": "^13.0",
                     "php": "^8.3",
-                    "whiskeyfur/jcw-app-kit": "^1.6"
+                    "whiskeyfur/jcw-app-kit": "^1.7"
                 },
                 "require-dev": {
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-15T22:53:27+00:00",
+                "time": "2026-10-15T22:57:37+00:00",
                 "type": "library",
                 "extra": {
                     "laravel": {

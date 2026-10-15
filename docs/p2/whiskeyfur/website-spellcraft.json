@@ -64,6 +64,70 @@
                     "proprietary"
                 ],
                 "description": "Spellcraft, a spellwright's workbench: spells and workings as matrices of components, with behaviour derived from how they are wired rather than written down. Keeps its own look."
+            },
+            {
+                "name": "whiskeyfur/website-spellcraft",
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-spellcraft.git",
+                    "reference": "f5d917b125713014db5c8a1763fc76164552486a"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-spellcraft/zipball/f5d917b125713014db5c8a1763fc76164552486a",
+                    "reference": "f5d917b125713014db5c8a1763fc76164552486a",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.7"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-15T22:57:37+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Spellcraft\\SpellcraftServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "spellcraft",
+                        "name": "Spellcraft",
+                        "url": "/saas",
+                        "landing": "/saas",
+                        "guest": false,
+                        "in-switcher": true,
+                        "maintainable": true,
+                        "requires-role": "saas",
+                        "roles": {
+                            "saas": "secondary"
+                        },
+                        "table-prefix": "spellcraft_",
+                        "manifest": "Jcw\\Spellcraft\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Spellcraft\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Spellcraft\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Spellcraft, a spellwright's workbench: spells and workings as matrices of components, with behaviour derived from how they are wired rather than written down. Keeps its own look."
             }
         ]
     }
