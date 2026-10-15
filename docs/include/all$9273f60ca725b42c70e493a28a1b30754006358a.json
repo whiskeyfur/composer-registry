@@ -218,12 +218,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/jcw-app-kit.git",
-                    "reference": "353ca1c1fb558325b24a59ccd2f7572ad72cf148"
+                    "reference": "026a72b46361dd91cba26e9c8abd41fb6e02b145"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/jcw-app-kit/zipball/353ca1c1fb558325b24a59ccd2f7572ad72cf148",
-                    "reference": "353ca1c1fb558325b24a59ccd2f7572ad72cf148",
+                    "url": "https://api.github.com/repos/whiskeyfur/jcw-app-kit/zipball/026a72b46361dd91cba26e9c8abd41fb6e02b145",
+                    "reference": "026a72b46361dd91cba26e9c8abd41fb6e02b145",
                     "shasum": ""
                 },
                 "require": {
@@ -236,7 +236,7 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-15T18:43:28+00:00",
+                "time": "2026-10-15T18:49:36+00:00",
                 "default-branch": true,
                 "type": "library",
                 "autoload": {
@@ -324,19 +324,19 @@
                 ],
                 "description": "The site's own pages: Markdown written by its editors, stored by address under /page. Claims the site's front page."
             },
-            "dev-main": {
+            "v1.1.0": {
                 "name": "whiskeyfur/website-pages",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v1.1.0",
+                "version_normalized": "1.1.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-pages.git",
-                    "reference": "426adac09213a21e783a497a07a7e2b09fc47b16"
+                    "reference": "c834b66cfb24e47a94ffb9fc1497215d1844c6cb"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-pages/zipball/426adac09213a21e783a497a07a7e2b09fc47b16",
-                    "reference": "426adac09213a21e783a497a07a7e2b09fc47b16",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-pages/zipball/c834b66cfb24e47a94ffb9fc1497215d1844c6cb",
+                    "reference": "c834b66cfb24e47a94ffb9fc1497215d1844c6cb",
                     "shasum": ""
                 },
                 "require": {
@@ -350,7 +350,74 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-15T18:40:55+00:00",
+                "time": "2026-10-15T19:15:29+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Pages\\PagesServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "pages",
+                        "name": "Home",
+                        "url": "/page",
+                        "landing": "/page/home",
+                        "front": true,
+                        "also": [
+                            "/home"
+                        ],
+                        "guest": true,
+                        "views": "pages",
+                        "roles": {
+                            "editor": "primary"
+                        },
+                        "table-prefix": "pages_",
+                        "manifest": "Jcw\\Pages\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Pages\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Pages\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "The site's own pages: Markdown written by its editors, stored by address under /page. Claims the site's front page."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-pages",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-pages.git",
+                    "reference": "c834b66cfb24e47a94ffb9fc1497215d1844c6cb"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-pages/zipball/c834b66cfb24e47a94ffb9fc1497215d1844c6cb",
+                    "reference": "c834b66cfb24e47a94ffb9fc1497215d1844c6cb",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "league/commonmark": "^2.8",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.0"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-15T19:15:29+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
