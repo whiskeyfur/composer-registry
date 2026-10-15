@@ -43,18 +43,18 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/apache-engine.git",
-                    "reference": "24ad7452bb6e87de1ee3cdf93e8d9a6bf67a70c9"
+                    "reference": "02f9766c32dc152d30e9cd252cd366c088dcd48e"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/apache-engine/zipball/24ad7452bb6e87de1ee3cdf93e8d9a6bf67a70c9",
-                    "reference": "24ad7452bb6e87de1ee3cdf93e8d9a6bf67a70c9",
+                    "url": "https://api.github.com/repos/whiskeyfur/apache-engine/zipball/02f9766c32dc152d30e9cd252cd366c088dcd48e",
+                    "reference": "02f9766c32dc152d30e9cd252cd366c088dcd48e",
                     "shasum": ""
                 },
                 "require": {
                     "php": ">=8.3"
                 },
-                "time": "2026-10-15T06:13:35+00:00",
+                "time": "2026-10-15T21:18:43+00:00",
                 "default-branch": true,
                 "type": "library",
                 "autoload": {

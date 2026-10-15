@@ -35,6 +35,41 @@
                     "proprietary"
                 ],
                 "description": "Reads an Apache configuration and works out where a URL ends up: which virtual host takes it, what the rewrite rules do to it, and which directives applied, step by step. For a server it is running on, or for a snapshot of one it is not."
+            },
+            {
+                "name": "whiskeyfur/apache-engine",
+                "version": "v1.1.0",
+                "version_normalized": "1.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/apache-engine.git",
+                    "reference": "02f9766c32dc152d30e9cd252cd366c088dcd48e"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/apache-engine/zipball/02f9766c32dc152d30e9cd252cd366c088dcd48e",
+                    "reference": "02f9766c32dc152d30e9cd252cd366c088dcd48e",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": ">=8.3"
+                },
+                "time": "2026-10-15T21:18:43+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Whiskeyfur\\Apache\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Whiskeyfur\\Apache\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Reads an Apache configuration and works out where a URL ends up: which virtual host takes it, what the rewrite rules do to it, and which directives applied, step by step. For a server it is running on, or for a snapshot of one it is not."
             }
         ]
     }
