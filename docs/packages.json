@@ -1,8 +1,8 @@
 {
     "packages": [],
     "includes": {
-        "include/all$c98e74b30af29e6bcdb139ddd93f8c784ccae8c3.json": {
-            "sha1": "c98e74b30af29e6bcdb139ddd93f8c784ccae8c3"
+        "include/all$1ef9678c2d15c2cc3ac72fcc7fa982d4446dfa8a.json": {
+            "sha1": "1ef9678c2d15c2cc3ac72fcc7fa982d4446dfa8a"
         }
     },
     "metadata-url": "/composer-registry/p2/%package%.json",
@@ -11,6 +11,7 @@
         "whiskeyfur/jcw-app-kit",
         "whiskeyfur/website-mcp",
         "whiskeyfur/website-me",
+        "whiskeyfur/website-monitors",
         "whiskeyfur/website-pages"
     ]
 }

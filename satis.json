@@ -21,6 +21,10 @@
         {
             "type": "vcs",
             "url": "git@github.com:whiskeyfur/website-mcp.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:whiskeyfur/website-monitors.git"
         }
     ],
     "require-all": true,
