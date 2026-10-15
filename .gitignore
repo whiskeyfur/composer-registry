@@ -1,0 +1,2 @@
+# Satis itself is installed separately (~/.local/satis), not here.
+/vendor

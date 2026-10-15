@@ -1,0 +1,12 @@
+{
+    "name": "whiskeyfur/composer-registry",
+    "homepage": "https://whiskeyfur.github.io/composer-registry",
+    "repositories": [
+        { "type": "vcs", "url": "git@github.com:whiskeyfur/apache-engine.git" }
+    ],
+    "require-all": true,
+    "require-dependencies": false,
+    "require-dev-dependencies": false,
+    "providers": false,
+    "output-dir": "docs"
+}

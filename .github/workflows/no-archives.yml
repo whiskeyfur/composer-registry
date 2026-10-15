@@ -1,0 +1,45 @@
+name: no archives
+
+# The one mistake in this repository that cannot be undone.
+#
+# satis.json has no "archive" block, so the published index is metadata only and the
+# package code stays in its private repositories. If an archive block is ever added, Satis
+# writes zip files of that private source into docs/ and GitHub Pages serves them to
+# anyone. Once Pages has served a zip it has been published, and deleting it afterwards
+# does not unpublish it.
+#
+# So: fail the build rather than let one through.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Refuse any package archive under docs/
+        run: |
+          found=$(find docs -type f \( -name '*.zip' -o -name '*.tar' -o -name '*.tar.gz' -o -name '*.tgz' \) 2>/dev/null || true)
+          if [ -n "$found" ]; then
+            echo "::error::Package archives found under docs/. This repository is public:"
+            echo "$found"
+            echo "Remove the \"archive\" block from satis.json and rebuild."
+            exit 1
+          fi
+          echo "No archives under docs/."
+
+      - name: Refuse an archive block in satis.json
+        run: |
+          if python3 -c "import json,sys; sys.exit(0 if 'archive' in json.load(open('satis.json')) else 1)"; then
+            echo "::error::satis.json has an \"archive\" block, which would publish private source."
+            exit 1
+          fi
+          echo "satis.json has no archive block."
