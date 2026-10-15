@@ -43,6 +43,49 @@
                     "proprietary"
                 ],
                 "description": "The contract an application package implements to be installable into jcw.wyrmfyre.com: its manifest, the base service provider that wires its views, migrations and assets, and the test harness it runs under."
+            },
+            {
+                "name": "whiskeyfur/jcw-app-kit",
+                "version": "v1.1.0",
+                "version_normalized": "1.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/jcw-app-kit.git",
+                    "reference": "3f06080ada5f2a2ace3b29ebf4df33524e4463fd"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/jcw-app-kit/zipball/3f06080ada5f2a2ace3b29ebf4df33524e4463fd",
+                    "reference": "3f06080ada5f2a2ace3b29ebf4df33524e4463fd",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/console": "^13.0",
+                    "illuminate/contracts": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-15T18:36:07+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Kit\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Kit\\Tests\\": "tests/",
+                        "Jcw\\Kit\\Tests\\Fixtures\\Example\\": "tests/Fixtures/example-app/src/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "The contract an application package implements to be installable into jcw.wyrmfyre.com: its manifest, the base service provider that wires its views, migrations and assets, and the test harness it runs under."
             }
         ]
     }
