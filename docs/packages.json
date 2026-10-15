@@ -1,13 +1,14 @@
 {
     "packages": [],
     "includes": {
-        "include/all$fc3f82f0ae5b9d6b4aada4ad92f9b9ef42ecb3b5.json": {
-            "sha1": "fc3f82f0ae5b9d6b4aada4ad92f9b9ef42ecb3b5"
+        "include/all$05b3e4ada2c13f9738b0bdd5f716e4bd84ba63a0.json": {
+            "sha1": "05b3e4ada2c13f9738b0bdd5f716e4bd84ba63a0"
         }
     },
     "metadata-url": "/composer-registry/p2/%package%.json",
     "available-packages": [
         "whiskeyfur/apache-engine",
-        "whiskeyfur/jcw-app-kit"
+        "whiskeyfur/jcw-app-kit",
+        "whiskeyfur/website-pages"
     ]
 }

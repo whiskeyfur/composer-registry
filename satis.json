@@ -9,6 +9,10 @@
         {
             "type": "vcs",
             "url": "git@github.com:whiskeyfur/apache-engine.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:whiskeyfur/website-pages.git"
         }
     ],
     "require-all": true,
