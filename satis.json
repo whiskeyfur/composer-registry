@@ -33,6 +33,10 @@
         {
             "type": "vcs",
             "url": "git@github.com:whiskeyfur/website-projects.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:whiskeyfur/website-gurps.git"
         }
     ],
     "require-all": true,
