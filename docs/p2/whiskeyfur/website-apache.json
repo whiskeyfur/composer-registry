@@ -1,0 +1,71 @@
+{
+    "packages": {
+        "whiskeyfur/website-apache": [
+            {
+                "name": "whiskeyfur/website-apache",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-apache.git",
+                    "reference": "7a79d6cbb4f72a4dc4f666e525abe8b4fe313234"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-apache/zipball/7a79d6cbb4f72a4dc4f666e525abe8b4fe313234",
+                    "reference": "7a79d6cbb4f72a4dc4f666e525abe8b4fe313234",
+                    "shasum": ""
+                },
+                "require": {
+                    "ext-openssl": "*",
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "phpseclib/phpseclib": "^3.0",
+                    "whiskeyfur/apache-engine": "^1.1",
+                    "whiskeyfur/jcw-app-kit": "^1.4"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-15T21:27:34+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Apache\\ApacheServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "apache",
+                        "name": "Apache parser",
+                        "url": "/apache",
+                        "landing": "/apache",
+                        "views": "apache",
+                        "guest": false,
+                        "in-switcher": false,
+                        "requires-role": "admin",
+                        "requires-passkey": true,
+                        "table-prefix": "apache_",
+                        "manifest": "Jcw\\Apache\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Apache\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Apache\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "The Apache parser: point it at a server you have SSH access to and it answers what that server's Apache would do with a URL, rewrite rules and all."
+            }
+        ]
+    }
+}
