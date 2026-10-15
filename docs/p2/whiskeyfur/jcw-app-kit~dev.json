@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/jcw-app-kit.git",
-                    "reference": "026a72b46361dd91cba26e9c8abd41fb6e02b145"
+                    "reference": "965cd30bf87f970be02f92d7d58d05c66ebf87f1"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/jcw-app-kit/zipball/026a72b46361dd91cba26e9c8abd41fb6e02b145",
-                    "reference": "026a72b46361dd91cba26e9c8abd41fb6e02b145",
+                    "url": "https://api.github.com/repos/whiskeyfur/jcw-app-kit/zipball/965cd30bf87f970be02f92d7d58d05c66ebf87f1",
+                    "reference": "965cd30bf87f970be02f92d7d58d05c66ebf87f1",
                     "shasum": ""
                 },
                 "require": {
@@ -26,7 +26,7 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-15T18:49:36+00:00",
+                "time": "2026-10-15T19:35:32+00:00",
                 "default-branch": true,
                 "type": "library",
                 "autoload": {
