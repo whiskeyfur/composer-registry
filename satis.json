@@ -13,6 +13,10 @@
         {
             "type": "vcs",
             "url": "git@github.com:whiskeyfur/website-pages.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:whiskeyfur/website-me.git"
         }
     ],
     "require-all": true,

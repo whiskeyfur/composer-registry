@@ -1,14 +1,15 @@
 {
     "packages": [],
     "includes": {
-        "include/all$85bc80cf7aa8ca80ed67e66bf03eba2253af5b7f.json": {
-            "sha1": "85bc80cf7aa8ca80ed67e66bf03eba2253af5b7f"
+        "include/all$3020fb04385210dd2f4925a73ddafe686015def6.json": {
+            "sha1": "3020fb04385210dd2f4925a73ddafe686015def6"
         }
     },
     "metadata-url": "/composer-registry/p2/%package%.json",
     "available-packages": [
         "whiskeyfur/apache-engine",
         "whiskeyfur/jcw-app-kit",
+        "whiskeyfur/website-me",
         "whiskeyfur/website-pages"
     ]
 }

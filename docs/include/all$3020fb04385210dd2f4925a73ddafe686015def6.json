@@ -299,6 +299,129 @@
                 "description": "The contract an application package implements to be installable into jcw.wyrmfyre.com: its manifest, the base service provider that wires its views, migrations and assets, and the test harness it runs under."
             }
         },
+        "whiskeyfur/website-me": {
+            "v1.0.0": {
+                "name": "whiskeyfur/website-me",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-me.git",
+                    "reference": "5704a5a80202f009dc36a657d7e79cdb413c7ed3"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-me/zipball/5704a5a80202f009dc36a657d7e79cdb413c7ed3",
+                    "reference": "5704a5a80202f009dc36a657d7e79cdb413c7ed3",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.3"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-15T19:39:20+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Me\\MeServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "me",
+                        "name": "Me",
+                        "url": "/me",
+                        "landing": "/me/calories",
+                        "views": "me",
+                        "guest": false,
+                        "in-switcher": false,
+                        "table-prefix": "me_",
+                        "manifest": "Jcw\\Me\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Me\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Me\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Me: each account's own private pages -- a calorie tracker and a weight tracker. Kept out of the app menu; it fills a menu of its own in the navbar."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-me",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-me.git",
+                    "reference": "5704a5a80202f009dc36a657d7e79cdb413c7ed3"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-me/zipball/5704a5a80202f009dc36a657d7e79cdb413c7ed3",
+                    "reference": "5704a5a80202f009dc36a657d7e79cdb413c7ed3",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.3"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-15T19:39:20+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Me\\MeServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "me",
+                        "name": "Me",
+                        "url": "/me",
+                        "landing": "/me/calories",
+                        "views": "me",
+                        "guest": false,
+                        "in-switcher": false,
+                        "table-prefix": "me_",
+                        "manifest": "Jcw\\Me\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Me\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Me\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Me: each account's own private pages -- a calorie tracker and a weight tracker. Kept out of the app menu; it fills a menu of its own in the navbar."
+            }
+        },
         "whiskeyfur/website-pages": {
             "v1.0.0": {
                 "name": "whiskeyfur/website-pages",
