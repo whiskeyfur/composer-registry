@@ -691,19 +691,19 @@
                 ],
                 "description": "The GURPS tools: Ritual Path Magic -- a ritual builder that prices energy, a spellbook, grimoires, gathering energy, charms and elixirs -- over casters imported from GCS character sheets."
             },
-            "dev-main": {
+            "v1.0.1": {
                 "name": "whiskeyfur/website-gurps",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-gurps.git",
-                    "reference": "9e4fbda82a5e5152f40e50bc6a4aca53ef7270ae"
+                    "reference": "f433fd7a65ac2faab6845e16819aa001baafea00"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-gurps/zipball/9e4fbda82a5e5152f40e50bc6a4aca53ef7270ae",
-                    "reference": "9e4fbda82a5e5152f40e50bc6a4aca53ef7270ae",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-gurps/zipball/f433fd7a65ac2faab6845e16819aa001baafea00",
+                    "reference": "f433fd7a65ac2faab6845e16819aa001baafea00",
                     "shasum": ""
                 },
                 "require": {
@@ -716,7 +716,73 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-15T22:34:32+00:00",
+                "time": "2026-10-15T22:37:14+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Gurps\\GurpsServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "gurps",
+                        "name": "Gurps",
+                        "url": "/gurps",
+                        "landing": "/gurps/rpm/builder",
+                        "views": "gurps",
+                        "guest": false,
+                        "in-switcher": true,
+                        "maintainable": true,
+                        "requires-role": "gurps",
+                        "roles": {
+                            "gurps": "info",
+                            "gurps-gm": "warning"
+                        },
+                        "table-prefix": "gurps_",
+                        "manifest": "Jcw\\Gurps\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Gurps\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Gurps\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "The GURPS tools: Ritual Path Magic -- a ritual builder that prices energy, a spellbook, grimoires, gathering energy, charms and elixirs -- over casters imported from GCS character sheets."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-gurps",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-gurps.git",
+                    "reference": "f433fd7a65ac2faab6845e16819aa001baafea00"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-gurps/zipball/f433fd7a65ac2faab6845e16819aa001baafea00",
+                    "reference": "f433fd7a65ac2faab6845e16819aa001baafea00",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.5"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-15T22:37:14+00:00",
                 "type": "library",
                 "extra": {
                     "laravel": {
