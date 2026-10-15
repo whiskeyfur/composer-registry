@@ -1,8 +1,8 @@
 {
     "packages": [],
     "includes": {
-        "include/all$b7a00e952262acc7451ebf7c46b72ba4a507f0b4.json": {
-            "sha1": "b7a00e952262acc7451ebf7c46b72ba4a507f0b4"
+        "include/all$4e57cb1ed8287d5129a220f4bd0cfbc1130aa9de.json": {
+            "sha1": "4e57cb1ed8287d5129a220f4bd0cfbc1130aa9de"
         }
     },
     "metadata-url": "/composer-registry/p2/%package%.json",
@@ -16,6 +16,7 @@
         "whiskeyfur/website-monitors",
         "whiskeyfur/website-pages",
         "whiskeyfur/website-projects",
-        "whiskeyfur/website-spellcraft"
+        "whiskeyfur/website-spellcraft",
+        "whiskeyfur/website-sysadmin"
     ]
 }

@@ -1,0 +1,73 @@
+{
+    "packages": {
+        "whiskeyfur/website-sysadmin": [
+            {
+                "name": "whiskeyfur/website-sysadmin",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-sysadmin.git",
+                    "reference": "1c052b72ec97ad6153b2794c63a922882c01e234"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-sysadmin/zipball/1c052b72ec97ad6153b2794c63a922882c01e234",
+                    "reference": "1c052b72ec97ad6153b2794c63a922882c01e234",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/ca-bundle": "^1.5",
+                    "ext-openssl": "*",
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "phpseclib/phpseclib": "^3.0",
+                    "whiskeyfur/apache-engine": "^1.1",
+                    "whiskeyfur/jcw-app-kit": "^1.8"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-15T23:17:06+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Sysadmin\\SysadminServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "sysadmin",
+                        "name": "Sysadmin",
+                        "url": "/sys",
+                        "landing": "/sys",
+                        "views": "sysadmin",
+                        "guest": false,
+                        "in-switcher": true,
+                        "maintainable": true,
+                        "requires-role": "admin",
+                        "requires-passkey": true,
+                        "table-prefix": "sysadmin_",
+                        "manifest": "Jcw\\Sysadmin\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Sysadmin\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Sysadmin\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "The sysadmin tool: servers watched over SSH, MariaDB and Apache, their logs and traffic read back, SSL certificates and CSRs, and the accounts it logs in with. Admins only, and only in a passkey session."
+            }
+        ]
+    }
+}
