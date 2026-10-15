@@ -1,0 +1,71 @@
+{
+    "packages": {
+        "whiskeyfur/website-projects": [
+            {
+                "name": "whiskeyfur/website-projects",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-projects.git",
+                    "reference": "eab9f1093ce1b866e8c7ba85f7c8e990b376d72c"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-projects/zipball/eab9f1093ce1b866e8c7ba85f7c8e990b376d72c",
+                    "reference": "eab9f1093ce1b866e8c7ba85f7c8e990b376d72c",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.5"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-15T22:02:04+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Projects\\ProjectsServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "projects",
+                        "name": "Projects",
+                        "url": "/projects",
+                        "landing": "/projects",
+                        "views": "projects",
+                        "guest": false,
+                        "in-switcher": true,
+                        "maintainable": true,
+                        "requires-role": "projects",
+                        "roles": {
+                            "projects": "success"
+                        },
+                        "table-prefix": "projects_",
+                        "manifest": "Jcw\\Projects\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Projects\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Projects\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Projects: project plans as a gantt chart and a left-to-right flow chart. Tasks carry a duration and what they wait for; every date, column and critical path is worked out from that, so the two charts can never disagree."
+            }
+        ]
+    }
+}
