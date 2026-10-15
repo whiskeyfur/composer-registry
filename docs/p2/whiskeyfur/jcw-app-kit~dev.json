@@ -1,0 +1,50 @@
+{
+    "packages": {
+        "whiskeyfur/jcw-app-kit": [
+            {
+                "name": "whiskeyfur/jcw-app-kit",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/jcw-app-kit.git",
+                    "reference": "fb68c28a77c2d154fc36c89c9deea5c6578f3ba4"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/jcw-app-kit/zipball/fb68c28a77c2d154fc36c89c9deea5c6578f3ba4",
+                    "reference": "fb68c28a77c2d154fc36c89c9deea5c6578f3ba4",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/console": "^13.0",
+                    "illuminate/contracts": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-15T17:55:13+00:00",
+                "default-branch": true,
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Kit\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Kit\\Tests\\": "tests/",
+                        "Jcw\\Kit\\Tests\\Fixtures\\Example\\": "tests/Fixtures/example-app/src/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "The contract an application package implements to be installable into jcw.wyrmfyre.com: its manifest, the base service provider that wires its views, migrations and assets, and the test harness it runs under."
+            }
+        ]
+    }
+}

@@ -2,7 +2,14 @@
     "name": "whiskeyfur/composer-registry",
     "homepage": "https://whiskeyfur.github.io/composer-registry",
     "repositories": [
-        { "type": "vcs", "url": "git@github.com:whiskeyfur/apache-engine.git" }
+        {
+            "type": "vcs",
+            "url": "git@github.com:whiskeyfur/jcw-app-kit.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:whiskeyfur/apache-engine.git"
+        }
     ],
     "require-all": true,
     "require-dependencies": false,

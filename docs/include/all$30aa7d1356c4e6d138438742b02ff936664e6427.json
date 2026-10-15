@@ -1,0 +1,131 @@
+{
+    "packages": {
+        "whiskeyfur/apache-engine": {
+            "dev-dev": {
+                "name": "whiskeyfur/apache-engine",
+                "version": "dev-dev",
+                "version_normalized": "dev-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/apache-engine.git",
+                    "reference": "24ad7452bb6e87de1ee3cdf93e8d9a6bf67a70c9"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/apache-engine/zipball/24ad7452bb6e87de1ee3cdf93e8d9a6bf67a70c9",
+                    "reference": "24ad7452bb6e87de1ee3cdf93e8d9a6bf67a70c9",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": ">=8.3"
+                },
+                "time": "2026-10-15T06:13:35+00:00",
+                "default-branch": true,
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Whiskeyfur\\Apache\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Whiskeyfur\\Apache\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Reads an Apache configuration and works out where a URL ends up: which virtual host takes it, what the rewrite rules do to it, and which directives applied, step by step. For a server it is running on, or for a snapshot of one it is not."
+            }
+        },
+        "whiskeyfur/jcw-app-kit": {
+            "v1.0.0": {
+                "name": "whiskeyfur/jcw-app-kit",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/jcw-app-kit.git",
+                    "reference": "fb68c28a77c2d154fc36c89c9deea5c6578f3ba4"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/jcw-app-kit/zipball/fb68c28a77c2d154fc36c89c9deea5c6578f3ba4",
+                    "reference": "fb68c28a77c2d154fc36c89c9deea5c6578f3ba4",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/console": "^13.0",
+                    "illuminate/contracts": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-15T17:55:13+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Kit\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Kit\\Tests\\": "tests/",
+                        "Jcw\\Kit\\Tests\\Fixtures\\Example\\": "tests/Fixtures/example-app/src/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "The contract an application package implements to be installable into jcw.wyrmfyre.com: its manifest, the base service provider that wires its views, migrations and assets, and the test harness it runs under."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/jcw-app-kit",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/jcw-app-kit.git",
+                    "reference": "fb68c28a77c2d154fc36c89c9deea5c6578f3ba4"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/jcw-app-kit/zipball/fb68c28a77c2d154fc36c89c9deea5c6578f3ba4",
+                    "reference": "fb68c28a77c2d154fc36c89c9deea5c6578f3ba4",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/console": "^13.0",
+                    "illuminate/contracts": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-15T17:55:13+00:00",
+                "default-branch": true,
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Kit\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Kit\\Tests\\": "tests/",
+                        "Jcw\\Kit\\Tests\\Fixtures\\Example\\": "tests/Fixtures/example-app/src/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "The contract an application package implements to be installable into jcw.wyrmfyre.com: its manifest, the base service provider that wires its views, migrations and assets, and the test harness it runs under."
+            }
+        }
+    }
+}
