@@ -578,19 +578,19 @@
                 ],
                 "description": "The contract an application package implements to be installable into jcw.wyrmfyre.com: its manifest, the base service provider that wires its views, migrations and assets, and the test harness it runs under."
             },
-            "dev-main": {
+            "v1.9.0": {
                 "name": "whiskeyfur/jcw-app-kit",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v1.9.0",
+                "version_normalized": "1.9.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/jcw-app-kit.git",
-                    "reference": "db067d795eeb88111ba45abc9212a78d133bf536"
+                    "reference": "fb373d521bf83f97da7209e1c4d5d56b53efdbde"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/jcw-app-kit/zipball/db067d795eeb88111ba45abc9212a78d133bf536",
-                    "reference": "db067d795eeb88111ba45abc9212a78d133bf536",
+                    "url": "https://api.github.com/repos/whiskeyfur/jcw-app-kit/zipball/fb373d521bf83f97da7209e1c4d5d56b53efdbde",
+                    "reference": "fb373d521bf83f97da7209e1c4d5d56b53efdbde",
                     "shasum": ""
                 },
                 "require": {
@@ -604,7 +604,51 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-15T23:09:14+00:00",
+                "time": "2026-10-15T23:50:59+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Kit\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Kit\\Tests\\": "tests/",
+                        "Jcw\\Kit\\Tests\\Fixtures\\Example\\": "tests/Fixtures/example-app/src/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "The contract an application package implements to be installable into jcw.wyrmfyre.com: its manifest, the base service provider that wires its views, migrations and assets, and the test harness it runs under."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/jcw-app-kit",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/jcw-app-kit.git",
+                    "reference": "fb373d521bf83f97da7209e1c4d5d56b53efdbde"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/jcw-app-kit/zipball/fb373d521bf83f97da7209e1c4d5d56b53efdbde",
+                    "reference": "fb373d521bf83f97da7209e1c4d5d56b53efdbde",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/console": "^13.0",
+                    "illuminate/contracts": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "league/commonmark": "^2.8",
+                    "php": "^8.3"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-15T23:50:59+00:00",
                 "default-branch": true,
                 "type": "library",
                 "autoload": {
