@@ -37,6 +37,10 @@
         {
             "type": "vcs",
             "url": "git@github.com:whiskeyfur/website-gurps.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:whiskeyfur/website-spellcraft.git"
         }
     ],
     "require-all": true,

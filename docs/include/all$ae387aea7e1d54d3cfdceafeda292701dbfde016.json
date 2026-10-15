@@ -1649,6 +1649,136 @@
                 ],
                 "description": "Projects: project plans as a gantt chart and a left-to-right flow chart. Tasks carry a duration and what they wait for; every date, column and critical path is worked out from that, so the two charts can never disagree."
             }
+        },
+        "whiskeyfur/website-spellcraft": {
+            "v1.0.0": {
+                "name": "whiskeyfur/website-spellcraft",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-spellcraft.git",
+                    "reference": "6925731e215096b1827ed422b90437a26a0803e8"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-spellcraft/zipball/6925731e215096b1827ed422b90437a26a0803e8",
+                    "reference": "6925731e215096b1827ed422b90437a26a0803e8",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.6"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-15T22:53:27+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Spellcraft\\SpellcraftServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "spellcraft",
+                        "name": "Spellcraft",
+                        "url": "/saas",
+                        "landing": "/saas",
+                        "guest": false,
+                        "in-switcher": true,
+                        "maintainable": true,
+                        "requires-role": "saas",
+                        "roles": {
+                            "saas": "secondary"
+                        },
+                        "table-prefix": "spellcraft_",
+                        "manifest": "Jcw\\Spellcraft\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Spellcraft\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Spellcraft\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Spellcraft, a spellwright's workbench: spells and workings as matrices of components, with behaviour derived from how they are wired rather than written down. Keeps its own look."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-spellcraft",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-spellcraft.git",
+                    "reference": "6925731e215096b1827ed422b90437a26a0803e8"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-spellcraft/zipball/6925731e215096b1827ed422b90437a26a0803e8",
+                    "reference": "6925731e215096b1827ed422b90437a26a0803e8",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.6"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-15T22:53:27+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Spellcraft\\SpellcraftServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "spellcraft",
+                        "name": "Spellcraft",
+                        "url": "/saas",
+                        "landing": "/saas",
+                        "guest": false,
+                        "in-switcher": true,
+                        "maintainable": true,
+                        "requires-role": "saas",
+                        "roles": {
+                            "saas": "secondary"
+                        },
+                        "table-prefix": "spellcraft_",
+                        "manifest": "Jcw\\Spellcraft\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Spellcraft\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Spellcraft\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Spellcraft, a spellwright's workbench: spells and workings as matrices of components, with behaviour derived from how they are wired rather than written down. Keeps its own look."
+            }
         }
     }
 }
