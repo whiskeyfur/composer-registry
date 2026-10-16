@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-mcp.git",
-                    "reference": "c83bdf538b64cb8cabda7e914e7b69b1613522f4"
+                    "reference": "cc402002807c3258f9572a42c7ecb7787cebca0f"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-mcp/zipball/c83bdf538b64cb8cabda7e914e7b69b1613522f4",
-                    "reference": "c83bdf538b64cb8cabda7e914e7b69b1613522f4",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-mcp/zipball/cc402002807c3258f9572a42c7ecb7787cebca0f",
+                    "reference": "cc402002807c3258f9572a42c7ecb7787cebca0f",
                     "shasum": ""
                 },
                 "require": {
@@ -26,7 +26,7 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-16T17:22:14+00:00",
+                "time": "2026-10-16T17:37:04+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -39,7 +39,7 @@
                         "key": "mcp",
                         "name": "MCP",
                         "url": "/mcp",
-                        "landing": "/mcp/tokens",
+                        "landing": "/mcp/console",
                         "guest": true,
                         "session": false,
                         "in-switcher": true,
