@@ -230,6 +230,50 @@
                 ],
                 "description": "The contract an application package implements to be installable into jcw.wyrmfyre.com: its manifest, the base service provider that wires its views, migrations and assets, and the test harness it runs under."
             },
+            "v1.10.0": {
+                "name": "whiskeyfur/jcw-app-kit",
+                "version": "v1.10.0",
+                "version_normalized": "1.10.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/jcw-app-kit.git",
+                    "reference": "967a1b4e0760b8348009f20427db8e466e1baf49"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/jcw-app-kit/zipball/967a1b4e0760b8348009f20427db8e466e1baf49",
+                    "reference": "967a1b4e0760b8348009f20427db8e466e1baf49",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/console": "^13.0",
+                    "illuminate/contracts": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "league/commonmark": "^2.8",
+                    "php": "^8.3"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T01:22:27+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Kit\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Kit\\Tests\\": "tests/",
+                        "Jcw\\Kit\\Tests\\Fixtures\\Example\\": "tests/Fixtures/example-app/src/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "The contract an application package implements to be installable into jcw.wyrmfyre.com: its manifest, the base service provider that wires its views, migrations and assets, and the test harness it runs under."
+            },
             "v1.2.0": {
                 "name": "whiskeyfur/jcw-app-kit",
                 "version": "v1.2.0",
@@ -629,12 +673,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/jcw-app-kit.git",
-                    "reference": "fb373d521bf83f97da7209e1c4d5d56b53efdbde"
+                    "reference": "967a1b4e0760b8348009f20427db8e466e1baf49"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/jcw-app-kit/zipball/fb373d521bf83f97da7209e1c4d5d56b53efdbde",
-                    "reference": "fb373d521bf83f97da7209e1c4d5d56b53efdbde",
+                    "url": "https://api.github.com/repos/whiskeyfur/jcw-app-kit/zipball/967a1b4e0760b8348009f20427db8e466e1baf49",
+                    "reference": "967a1b4e0760b8348009f20427db8e466e1baf49",
                     "shasum": ""
                 },
                 "require": {
@@ -648,7 +692,7 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-15T23:50:59+00:00",
+                "time": "2026-10-16T01:22:27+00:00",
                 "default-branch": true,
                 "type": "library",
                 "autoload": {
@@ -734,19 +778,19 @@
                 ],
                 "description": "The Apache parser: point it at a server you have SSH access to and it answers what that server's Apache would do with a URL, rewrite rules and all."
             },
-            "dev-main": {
+            "v1.0.1": {
                 "name": "whiskeyfur/website-apache",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-apache.git",
-                    "reference": "7a79d6cbb4f72a4dc4f666e525abe8b4fe313234"
+                    "reference": "e11dc8dc2f33c36be07d2e8c3c9b78911a968d24"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-apache/zipball/7a79d6cbb4f72a4dc4f666e525abe8b4fe313234",
-                    "reference": "7a79d6cbb4f72a4dc4f666e525abe8b4fe313234",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-apache/zipball/e11dc8dc2f33c36be07d2e8c3c9b78911a968d24",
+                    "reference": "e11dc8dc2f33c36be07d2e8c3c9b78911a968d24",
                     "shasum": ""
                 },
                 "require": {
@@ -762,7 +806,72 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-15T21:27:34+00:00",
+                "time": "2026-10-16T01:27:55+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Apache\\ApacheServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "apache",
+                        "name": "Apache parser",
+                        "url": "/apache",
+                        "landing": "/apache",
+                        "views": "apache",
+                        "guest": false,
+                        "in-switcher": false,
+                        "requires-role": "admin",
+                        "requires-passkey": true,
+                        "table-prefix": "apache_",
+                        "manifest": "Jcw\\Apache\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Apache\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Apache\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "The Apache parser: point it at a server you have SSH access to and it answers what that server's Apache would do with a URL, rewrite rules and all."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-apache",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-apache.git",
+                    "reference": "e11dc8dc2f33c36be07d2e8c3c9b78911a968d24"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-apache/zipball/e11dc8dc2f33c36be07d2e8c3c9b78911a968d24",
+                    "reference": "e11dc8dc2f33c36be07d2e8c3c9b78911a968d24",
+                    "shasum": ""
+                },
+                "require": {
+                    "ext-openssl": "*",
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "phpseclib/phpseclib": "^3.0",
+                    "whiskeyfur/apache-engine": "^1.1",
+                    "whiskeyfur/jcw-app-kit": "^1.4"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T01:27:55+00:00",
                 "type": "library",
                 "extra": {
                     "laravel": {
@@ -937,19 +1046,19 @@
                 ],
                 "description": "Frontier: a simulated world of anthros, land, trade and court, played a day at a time -- and run between days by a Lua script its masters write."
             },
-            "dev-main": {
+            "v1.0.2": {
                 "name": "whiskeyfur/website-frontier",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v1.0.2",
+                "version_normalized": "1.0.2.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-frontier.git",
-                    "reference": "984b8cfd6ddc9fd7acdc46e002d0b94dd7340f15"
+                    "reference": "94b816205786f3c80dc6ffc2eec1c5ba81233ee1"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-frontier/zipball/984b8cfd6ddc9fd7acdc46e002d0b94dd7340f15",
-                    "reference": "984b8cfd6ddc9fd7acdc46e002d0b94dd7340f15",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-frontier/zipball/94b816205786f3c80dc6ffc2eec1c5ba81233ee1",
+                    "reference": "94b816205786f3c80dc6ffc2eec1c5ba81233ee1",
                     "shasum": ""
                 },
                 "require": {
@@ -958,13 +1067,81 @@
                     "illuminate/console": "^13.0",
                     "illuminate/support": "^13.0",
                     "php": "^8.3",
-                    "whiskeyfur/jcw-app-kit": "^1.9"
+                    "whiskeyfur/jcw-app-kit": "^1.10"
                 },
                 "require-dev": {
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-16T01:13:44+00:00",
+                "time": "2026-10-16T01:27:58+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Frontier\\FrontierServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "frontier",
+                        "name": "Frontier",
+                        "url": "/game",
+                        "landing": "/game/home",
+                        "views": "frontier",
+                        "guest": false,
+                        "in-switcher": true,
+                        "maintainable": true,
+                        "requires-role": "frontier",
+                        "table-prefix": "game_",
+                        "roles": {
+                            "frontier": "success",
+                            "frontier-gm": "warning"
+                        },
+                        "manifest": "Jcw\\Frontier\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Frontier\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Frontier\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Frontier: a simulated world of anthros, land, trade and court, played a day at a time -- and run between days by a Lua script its masters write."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-frontier",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-frontier.git",
+                    "reference": "94b816205786f3c80dc6ffc2eec1c5ba81233ee1"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-frontier/zipball/94b816205786f3c80dc6ffc2eec1c5ba81233ee1",
+                    "reference": "94b816205786f3c80dc6ffc2eec1c5ba81233ee1",
+                    "shasum": ""
+                },
+                "require": {
+                    "ext-luasandbox": "*",
+                    "ext-pdo": "*",
+                    "illuminate/console": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.10"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T01:27:58+00:00",
                 "type": "library",
                 "extra": {
                     "laravel": {
@@ -1268,19 +1445,19 @@
                 ],
                 "description": "The MCP service: a Model Context Protocol endpoint for AI assistants, authenticating with its own access tokens rather than the site's session."
             },
-            "dev-main": {
+            "v1.0.1": {
                 "name": "whiskeyfur/website-mcp",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-mcp.git",
-                    "reference": "074ab1a849f06626418594d51498195ca1c0f920"
+                    "reference": "7ef936ba55329caa55791ebf7344f61b29a26209"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-mcp/zipball/074ab1a849f06626418594d51498195ca1c0f920",
-                    "reference": "074ab1a849f06626418594d51498195ca1c0f920",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-mcp/zipball/7ef936ba55329caa55791ebf7344f61b29a26209",
+                    "reference": "7ef936ba55329caa55791ebf7344f61b29a26209",
                     "shasum": ""
                 },
                 "require": {
@@ -1293,7 +1470,68 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-15T19:54:20+00:00",
+                "time": "2026-10-16T01:27:38+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Mcp\\McpServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "mcp",
+                        "name": "MCP",
+                        "url": "/mcp",
+                        "landing": "/mcp",
+                        "guest": true,
+                        "session": false,
+                        "in-switcher": false,
+                        "maintainable": true,
+                        "table-prefix": "mcp_",
+                        "manifest": "Jcw\\Mcp\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Mcp\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Mcp\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "The MCP service: a Model Context Protocol endpoint for AI assistants, authenticating with its own access tokens rather than the site's session."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-mcp",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-mcp.git",
+                    "reference": "7ef936ba55329caa55791ebf7344f61b29a26209"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-mcp/zipball/7ef936ba55329caa55791ebf7344f61b29a26209",
+                    "reference": "7ef936ba55329caa55791ebf7344f61b29a26209",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.3"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T01:27:38+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -1392,19 +1630,19 @@
                 ],
                 "description": "Me: each account's own private pages -- a calorie tracker and a weight tracker. Kept out of the app menu; it fills a menu of its own in the navbar."
             },
-            "dev-main": {
+            "v1.0.1": {
                 "name": "whiskeyfur/website-me",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-me.git",
-                    "reference": "5704a5a80202f009dc36a657d7e79cdb413c7ed3"
+                    "reference": "b37788b7479b74a69f41a2b87bd323584049fd30"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-me/zipball/5704a5a80202f009dc36a657d7e79cdb413c7ed3",
-                    "reference": "5704a5a80202f009dc36a657d7e79cdb413c7ed3",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-me/zipball/b37788b7479b74a69f41a2b87bd323584049fd30",
+                    "reference": "b37788b7479b74a69f41a2b87bd323584049fd30",
                     "shasum": ""
                 },
                 "require": {
@@ -1417,7 +1655,67 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-15T19:39:20+00:00",
+                "time": "2026-10-16T01:27:36+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Me\\MeServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "me",
+                        "name": "Me",
+                        "url": "/me",
+                        "landing": "/me/calories",
+                        "views": "me",
+                        "guest": false,
+                        "in-switcher": false,
+                        "table-prefix": "me_",
+                        "manifest": "Jcw\\Me\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Me\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Me\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Me: each account's own private pages -- a calorie tracker and a weight tracker. Kept out of the app menu; it fills a menu of its own in the navbar."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-me",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-me.git",
+                    "reference": "b37788b7479b74a69f41a2b87bd323584049fd30"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-me/zipball/b37788b7479b74a69f41a2b87bd323584049fd30",
+                    "reference": "b37788b7479b74a69f41a2b87bd323584049fd30",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.3"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T01:27:36+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -1520,19 +1818,19 @@
                 ],
                 "description": "Uptime monitors: an admin's own sites, checked every minute for being up, for the text they should show, and for their TLS."
             },
-            "dev-main": {
+            "v1.0.1": {
                 "name": "whiskeyfur/website-monitors",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-monitors.git",
-                    "reference": "378c80adc0a453937d14a31f887e5b52f0908610"
+                    "reference": "c78b5b058039e9a97a50a496c74a923d824a15b1"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-monitors/zipball/378c80adc0a453937d14a31f887e5b52f0908610",
-                    "reference": "378c80adc0a453937d14a31f887e5b52f0908610",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-monitors/zipball/c78b5b058039e9a97a50a496c74a923d824a15b1",
+                    "reference": "c78b5b058039e9a97a50a496c74a923d824a15b1",
                     "shasum": ""
                 },
                 "require": {
@@ -1549,7 +1847,72 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-15T20:13:07+00:00",
+                "time": "2026-10-16T01:27:53+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Monitors\\MonitorsServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "monitors",
+                        "name": "Uptime monitors",
+                        "url": "/monitors",
+                        "landing": "/monitors",
+                        "views": "monitors",
+                        "guest": false,
+                        "in-switcher": false,
+                        "requires-role": "admin",
+                        "table-prefix": "monitors_",
+                        "manifest": "Jcw\\Monitors\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Monitors\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Monitors\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Uptime monitors: an admin's own sites, checked every minute for being up, for the text they should show, and for their TLS."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-monitors",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-monitors.git",
+                    "reference": "c78b5b058039e9a97a50a496c74a923d824a15b1"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-monitors/zipball/c78b5b058039e9a97a50a496c74a923d824a15b1",
+                    "reference": "c78b5b058039e9a97a50a496c74a923d824a15b1",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/ca-bundle": "^1.5",
+                    "ext-curl": "*",
+                    "ext-openssl": "*",
+                    "illuminate/console": "^13.0",
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.3"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T01:27:53+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -1722,19 +2085,19 @@
                 ],
                 "description": "The site's own pages: Markdown written by its editors, stored by address under /page. Claims the site's front page."
             },
-            "dev-main": {
+            "v1.1.1": {
                 "name": "whiskeyfur/website-pages",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v1.1.1",
+                "version_normalized": "1.1.1.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-pages.git",
-                    "reference": "c834b66cfb24e47a94ffb9fc1497215d1844c6cb"
+                    "reference": "1c5e9cc32242045270d2845a037579ccb37d579d"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-pages/zipball/c834b66cfb24e47a94ffb9fc1497215d1844c6cb",
-                    "reference": "c834b66cfb24e47a94ffb9fc1497215d1844c6cb",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-pages/zipball/1c5e9cc32242045270d2845a037579ccb37d579d",
+                    "reference": "1c5e9cc32242045270d2845a037579ccb37d579d",
                     "shasum": ""
                 },
                 "require": {
@@ -1748,7 +2111,74 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-15T19:15:29+00:00",
+                "time": "2026-10-16T01:27:34+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Pages\\PagesServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "pages",
+                        "name": "Home",
+                        "url": "/page",
+                        "landing": "/page/home",
+                        "front": true,
+                        "also": [
+                            "/home"
+                        ],
+                        "guest": true,
+                        "views": "pages",
+                        "roles": {
+                            "editor": "primary"
+                        },
+                        "table-prefix": "pages_",
+                        "manifest": "Jcw\\Pages\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Pages\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Pages\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "The site's own pages: Markdown written by its editors, stored by address under /page. Claims the site's front page."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-pages",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-pages.git",
+                    "reference": "1c5e9cc32242045270d2845a037579ccb37d579d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-pages/zipball/1c5e9cc32242045270d2845a037579ccb37d579d",
+                    "reference": "1c5e9cc32242045270d2845a037579ccb37d579d",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "league/commonmark": "^2.8",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.0"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T01:27:34+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -2117,19 +2547,19 @@
                 ],
                 "description": "Spellcraft, a spellwright's workbench: spells and workings as matrices of components, with behaviour derived from how they are wired rather than written down. Keeps its own look."
             },
-            "dev-main": {
+            "v1.0.2": {
                 "name": "whiskeyfur/website-spellcraft",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v1.0.2",
+                "version_normalized": "1.0.2.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-spellcraft.git",
-                    "reference": "f5d917b125713014db5c8a1763fc76164552486a"
+                    "reference": "5e409275002c43d6124330a5390f157b850f5ae0"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-spellcraft/zipball/f5d917b125713014db5c8a1763fc76164552486a",
-                    "reference": "f5d917b125713014db5c8a1763fc76164552486a",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-spellcraft/zipball/5e409275002c43d6124330a5390f157b850f5ae0",
+                    "reference": "5e409275002c43d6124330a5390f157b850f5ae0",
                     "shasum": ""
                 },
                 "require": {
@@ -2142,7 +2572,71 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-15T22:57:37+00:00",
+                "time": "2026-10-16T01:27:57+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Spellcraft\\SpellcraftServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "spellcraft",
+                        "name": "Spellcraft",
+                        "url": "/saas",
+                        "landing": "/saas",
+                        "guest": false,
+                        "in-switcher": true,
+                        "maintainable": true,
+                        "requires-role": "saas",
+                        "roles": {
+                            "saas": "secondary"
+                        },
+                        "table-prefix": "spellcraft_",
+                        "manifest": "Jcw\\Spellcraft\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Spellcraft\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Spellcraft\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Spellcraft, a spellwright's workbench: spells and workings as matrices of components, with behaviour derived from how they are wired rather than written down. Keeps its own look."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-spellcraft",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-spellcraft.git",
+                    "reference": "5e409275002c43d6124330a5390f157b850f5ae0"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-spellcraft/zipball/5e409275002c43d6124330a5390f157b850f5ae0",
+                    "reference": "5e409275002c43d6124330a5390f157b850f5ae0",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.7"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T01:27:57+00:00",
                 "type": "library",
                 "extra": {
                     "laravel": {

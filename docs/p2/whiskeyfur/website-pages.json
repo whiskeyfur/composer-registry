@@ -134,6 +134,73 @@
                     "proprietary"
                 ],
                 "description": "The site's own pages: Markdown written by its editors, stored by address under /page. Claims the site's front page."
+            },
+            {
+                "name": "whiskeyfur/website-pages",
+                "version": "v1.1.1",
+                "version_normalized": "1.1.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-pages.git",
+                    "reference": "1c5e9cc32242045270d2845a037579ccb37d579d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-pages/zipball/1c5e9cc32242045270d2845a037579ccb37d579d",
+                    "reference": "1c5e9cc32242045270d2845a037579ccb37d579d",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "league/commonmark": "^2.8",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.0"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T01:27:34+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Pages\\PagesServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "pages",
+                        "name": "Home",
+                        "url": "/page",
+                        "landing": "/page/home",
+                        "front": true,
+                        "also": [
+                            "/home"
+                        ],
+                        "guest": true,
+                        "views": "pages",
+                        "roles": {
+                            "editor": "primary"
+                        },
+                        "table-prefix": "pages_",
+                        "manifest": "Jcw\\Pages\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Pages\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Pages\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "The site's own pages: Markdown written by its editors, stored by address under /page. Claims the site's front page."
             }
         ]
     }

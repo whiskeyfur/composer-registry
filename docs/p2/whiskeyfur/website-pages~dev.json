@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-pages.git",
-                    "reference": "c834b66cfb24e47a94ffb9fc1497215d1844c6cb"
+                    "reference": "1c5e9cc32242045270d2845a037579ccb37d579d"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-pages/zipball/c834b66cfb24e47a94ffb9fc1497215d1844c6cb",
-                    "reference": "c834b66cfb24e47a94ffb9fc1497215d1844c6cb",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-pages/zipball/1c5e9cc32242045270d2845a037579ccb37d579d",
+                    "reference": "1c5e9cc32242045270d2845a037579ccb37d579d",
                     "shasum": ""
                 },
                 "require": {
@@ -27,7 +27,7 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-15T19:15:29+00:00",
+                "time": "2026-10-16T01:27:34+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {

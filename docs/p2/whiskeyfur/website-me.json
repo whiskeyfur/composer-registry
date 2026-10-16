@@ -60,6 +60,66 @@
                     "proprietary"
                 ],
                 "description": "Me: each account's own private pages -- a calorie tracker and a weight tracker. Kept out of the app menu; it fills a menu of its own in the navbar."
+            },
+            {
+                "name": "whiskeyfur/website-me",
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-me.git",
+                    "reference": "b37788b7479b74a69f41a2b87bd323584049fd30"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-me/zipball/b37788b7479b74a69f41a2b87bd323584049fd30",
+                    "reference": "b37788b7479b74a69f41a2b87bd323584049fd30",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.3"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T01:27:36+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Me\\MeServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "me",
+                        "name": "Me",
+                        "url": "/me",
+                        "landing": "/me/calories",
+                        "views": "me",
+                        "guest": false,
+                        "in-switcher": false,
+                        "table-prefix": "me_",
+                        "manifest": "Jcw\\Me\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Me\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Me\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Me: each account's own private pages -- a calorie tracker and a weight tracker. Kept out of the app menu; it fills a menu of its own in the navbar."
             }
         ]
     }

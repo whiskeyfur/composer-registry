@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-monitors.git",
-                    "reference": "378c80adc0a453937d14a31f887e5b52f0908610"
+                    "reference": "c78b5b058039e9a97a50a496c74a923d824a15b1"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-monitors/zipball/378c80adc0a453937d14a31f887e5b52f0908610",
-                    "reference": "378c80adc0a453937d14a31f887e5b52f0908610",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-monitors/zipball/c78b5b058039e9a97a50a496c74a923d824a15b1",
+                    "reference": "c78b5b058039e9a97a50a496c74a923d824a15b1",
                     "shasum": ""
                 },
                 "require": {
@@ -30,7 +30,7 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-15T20:13:07+00:00",
+                "time": "2026-10-16T01:27:53+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
