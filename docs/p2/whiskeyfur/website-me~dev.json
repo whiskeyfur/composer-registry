@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-me.git",
-                    "reference": "b37788b7479b74a69f41a2b87bd323584049fd30"
+                    "reference": "69fcc4240c77641f628334f7b89561df28a11360"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-me/zipball/b37788b7479b74a69f41a2b87bd323584049fd30",
-                    "reference": "b37788b7479b74a69f41a2b87bd323584049fd30",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-me/zipball/69fcc4240c77641f628334f7b89561df28a11360",
+                    "reference": "69fcc4240c77641f628334f7b89561df28a11360",
                     "shasum": ""
                 },
                 "require": {
@@ -26,7 +26,7 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-16T01:27:36+00:00",
+                "time": "2026-10-16T16:59:46+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -42,7 +42,7 @@
                         "landing": "/me/calories",
                         "views": "me",
                         "guest": false,
-                        "in-switcher": false,
+                        "in-switcher": true,
                         "table-prefix": "me_",
                         "manifest": "Jcw\\Me\\Manifest"
                     }

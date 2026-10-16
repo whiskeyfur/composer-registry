@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-frontier.git",
-                    "reference": "cd07c8a1231590f2dd3bbd8e3ef28ff9a6ea6458"
+                    "reference": "f0ec3aaabe86c7bc6d8c11ce013dc4056d28a171"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-frontier/zipball/cd07c8a1231590f2dd3bbd8e3ef28ff9a6ea6458",
-                    "reference": "cd07c8a1231590f2dd3bbd8e3ef28ff9a6ea6458",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-frontier/zipball/f0ec3aaabe86c7bc6d8c11ce013dc4056d28a171",
+                    "reference": "f0ec3aaabe86c7bc6d8c11ce013dc4056d28a171",
                     "shasum": ""
                 },
                 "require": {
@@ -28,7 +28,7 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-16T16:29:45+00:00",
+                "time": "2026-10-16T16:59:49+00:00",
                 "type": "library",
                 "extra": {
                     "laravel": {

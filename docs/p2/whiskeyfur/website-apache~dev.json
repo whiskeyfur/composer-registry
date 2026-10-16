@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-apache.git",
-                    "reference": "05347b1a87480bb6d97840301875b83ba577a88c"
+                    "reference": "cb49fa9964de9b868fa9c2a6c74fa7b04807b87d"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-apache/zipball/05347b1a87480bb6d97840301875b83ba577a88c",
-                    "reference": "05347b1a87480bb6d97840301875b83ba577a88c",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-apache/zipball/cb49fa9964de9b868fa9c2a6c74fa7b04807b87d",
+                    "reference": "cb49fa9964de9b868fa9c2a6c74fa7b04807b87d",
                     "shasum": ""
                 },
                 "require": {
@@ -29,7 +29,7 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-16T16:55:29+00:00",
+                "time": "2026-10-16T16:59:44+00:00",
                 "type": "library",
                 "extra": {
                     "laravel": {

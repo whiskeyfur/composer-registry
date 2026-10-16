@@ -908,19 +908,19 @@
                 ],
                 "description": "The Apache parser: point it at a server you have SSH access to and it answers what that server's Apache would do with a URL, rewrite rules and all."
             },
-            "dev-main": {
+            "v1.0.3": {
                 "name": "whiskeyfur/website-apache",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v1.0.3",
+                "version_normalized": "1.0.3.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-apache.git",
-                    "reference": "05347b1a87480bb6d97840301875b83ba577a88c"
+                    "reference": "cb49fa9964de9b868fa9c2a6c74fa7b04807b87d"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-apache/zipball/05347b1a87480bb6d97840301875b83ba577a88c",
-                    "reference": "05347b1a87480bb6d97840301875b83ba577a88c",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-apache/zipball/cb49fa9964de9b868fa9c2a6c74fa7b04807b87d",
+                    "reference": "cb49fa9964de9b868fa9c2a6c74fa7b04807b87d",
                     "shasum": ""
                 },
                 "require": {
@@ -936,7 +936,72 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-16T16:55:29+00:00",
+                "time": "2026-10-16T16:59:44+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Apache\\ApacheServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "apache",
+                        "name": "Apache parser",
+                        "url": "/apache",
+                        "landing": "/apache",
+                        "views": "apache",
+                        "guest": false,
+                        "in-switcher": true,
+                        "requires-role": "admin",
+                        "requires-passkey": true,
+                        "table-prefix": "apache_",
+                        "manifest": "Jcw\\Apache\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Apache\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Apache\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "The Apache parser: point it at a server you have SSH access to and it answers what that server's Apache would do with a URL, rewrite rules and all."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-apache",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-apache.git",
+                    "reference": "cb49fa9964de9b868fa9c2a6c74fa7b04807b87d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-apache/zipball/cb49fa9964de9b868fa9c2a6c74fa7b04807b87d",
+                    "reference": "cb49fa9964de9b868fa9c2a6c74fa7b04807b87d",
+                    "shasum": ""
+                },
+                "require": {
+                    "ext-openssl": "*",
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "phpseclib/phpseclib": "^3.0",
+                    "whiskeyfur/apache-engine": "^1.1",
+                    "whiskeyfur/jcw-app-kit": "^1.4"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T16:59:44+00:00",
                 "type": "library",
                 "extra": {
                     "laravel": {
@@ -1247,19 +1312,19 @@
                 ],
                 "description": "Frontier: a simulated world of anthros, land, trade and court, played a day at a time -- and run between days by a Lua script its masters write."
             },
-            "dev-main": {
+            "v1.0.4": {
                 "name": "whiskeyfur/website-frontier",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v1.0.4",
+                "version_normalized": "1.0.4.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-frontier.git",
-                    "reference": "cd07c8a1231590f2dd3bbd8e3ef28ff9a6ea6458"
+                    "reference": "f0ec3aaabe86c7bc6d8c11ce013dc4056d28a171"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-frontier/zipball/cd07c8a1231590f2dd3bbd8e3ef28ff9a6ea6458",
-                    "reference": "cd07c8a1231590f2dd3bbd8e3ef28ff9a6ea6458",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-frontier/zipball/f0ec3aaabe86c7bc6d8c11ce013dc4056d28a171",
+                    "reference": "f0ec3aaabe86c7bc6d8c11ce013dc4056d28a171",
                     "shasum": ""
                 },
                 "require": {
@@ -1274,7 +1339,75 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-16T16:29:45+00:00",
+                "time": "2026-10-16T16:59:49+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Frontier\\FrontierServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "frontier",
+                        "name": "Frontier",
+                        "url": "/game",
+                        "landing": "/game/home",
+                        "views": "frontier",
+                        "guest": false,
+                        "in-switcher": true,
+                        "maintainable": true,
+                        "requires-role": "frontier",
+                        "table-prefix": "game_",
+                        "roles": {
+                            "frontier": "success",
+                            "frontier-gm": "warning"
+                        },
+                        "manifest": "Jcw\\Frontier\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Frontier\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Frontier\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Frontier: a simulated world of anthros, land, trade and court, played a day at a time -- and run between days by a Lua script its masters write."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-frontier",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-frontier.git",
+                    "reference": "f0ec3aaabe86c7bc6d8c11ce013dc4056d28a171"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-frontier/zipball/f0ec3aaabe86c7bc6d8c11ce013dc4056d28a171",
+                    "reference": "f0ec3aaabe86c7bc6d8c11ce013dc4056d28a171",
+                    "shasum": ""
+                },
+                "require": {
+                    "ext-luasandbox": "*",
+                    "ext-pdo": "*",
+                    "illuminate/console": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.10"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T16:59:49+00:00",
                 "type": "library",
                 "extra": {
                     "laravel": {
@@ -1823,19 +1956,19 @@
                 ],
                 "description": "Me: each account's own private pages -- a calorie tracker and a weight tracker. Kept out of the app menu; it fills a menu of its own in the navbar."
             },
-            "dev-main": {
+            "v1.0.2": {
                 "name": "whiskeyfur/website-me",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v1.0.2",
+                "version_normalized": "1.0.2.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-me.git",
-                    "reference": "b37788b7479b74a69f41a2b87bd323584049fd30"
+                    "reference": "69fcc4240c77641f628334f7b89561df28a11360"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-me/zipball/b37788b7479b74a69f41a2b87bd323584049fd30",
-                    "reference": "b37788b7479b74a69f41a2b87bd323584049fd30",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-me/zipball/69fcc4240c77641f628334f7b89561df28a11360",
+                    "reference": "69fcc4240c77641f628334f7b89561df28a11360",
                     "shasum": ""
                 },
                 "require": {
@@ -1848,7 +1981,67 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-16T01:27:36+00:00",
+                "time": "2026-10-16T16:59:46+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Me\\MeServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "me",
+                        "name": "Me",
+                        "url": "/me",
+                        "landing": "/me/calories",
+                        "views": "me",
+                        "guest": false,
+                        "in-switcher": true,
+                        "table-prefix": "me_",
+                        "manifest": "Jcw\\Me\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Me\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Me\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Me: each account's own private pages -- a calorie tracker and a weight tracker. Kept out of the app menu; it fills a menu of its own in the navbar."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-me",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-me.git",
+                    "reference": "69fcc4240c77641f628334f7b89561df28a11360"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-me/zipball/69fcc4240c77641f628334f7b89561df28a11360",
+                    "reference": "69fcc4240c77641f628334f7b89561df28a11360",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.3"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T16:59:46+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -1864,7 +2057,7 @@
                         "landing": "/me/calories",
                         "views": "me",
                         "guest": false,
-                        "in-switcher": false,
+                        "in-switcher": true,
                         "table-prefix": "me_",
                         "manifest": "Jcw\\Me\\Manifest"
                     }
@@ -2016,19 +2209,19 @@
                 ],
                 "description": "Uptime monitors: an admin's own sites, checked every minute for being up, for the text they should show, and for their TLS."
             },
-            "dev-main": {
+            "v1.0.2": {
                 "name": "whiskeyfur/website-monitors",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v1.0.2",
+                "version_normalized": "1.0.2.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-monitors.git",
-                    "reference": "c78b5b058039e9a97a50a496c74a923d824a15b1"
+                    "reference": "ca6fd498e48f0f9f386930402a230013834107da"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-monitors/zipball/c78b5b058039e9a97a50a496c74a923d824a15b1",
-                    "reference": "c78b5b058039e9a97a50a496c74a923d824a15b1",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-monitors/zipball/ca6fd498e48f0f9f386930402a230013834107da",
+                    "reference": "ca6fd498e48f0f9f386930402a230013834107da",
                     "shasum": ""
                 },
                 "require": {
@@ -2045,7 +2238,72 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-16T01:27:53+00:00",
+                "time": "2026-10-16T16:59:42+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Monitors\\MonitorsServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "monitors",
+                        "name": "Uptime monitors",
+                        "url": "/monitors",
+                        "landing": "/monitors",
+                        "views": "monitors",
+                        "guest": false,
+                        "in-switcher": true,
+                        "requires-role": "admin",
+                        "table-prefix": "monitors_",
+                        "manifest": "Jcw\\Monitors\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Monitors\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Monitors\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Uptime monitors: an admin's own sites, checked every minute for being up, for the text they should show, and for their TLS."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-monitors",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-monitors.git",
+                    "reference": "ca6fd498e48f0f9f386930402a230013834107da"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-monitors/zipball/ca6fd498e48f0f9f386930402a230013834107da",
+                    "reference": "ca6fd498e48f0f9f386930402a230013834107da",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/ca-bundle": "^1.5",
+                    "ext-curl": "*",
+                    "ext-openssl": "*",
+                    "illuminate/console": "^13.0",
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.3"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T16:59:42+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -2061,7 +2319,7 @@
                         "landing": "/monitors",
                         "views": "monitors",
                         "guest": false,
-                        "in-switcher": false,
+                        "in-switcher": true,
                         "requires-role": "admin",
                         "table-prefix": "monitors_",
                         "manifest": "Jcw\\Monitors\\Manifest"

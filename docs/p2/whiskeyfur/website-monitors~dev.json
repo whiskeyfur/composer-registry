@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-monitors.git",
-                    "reference": "c78b5b058039e9a97a50a496c74a923d824a15b1"
+                    "reference": "ca6fd498e48f0f9f386930402a230013834107da"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-monitors/zipball/c78b5b058039e9a97a50a496c74a923d824a15b1",
-                    "reference": "c78b5b058039e9a97a50a496c74a923d824a15b1",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-monitors/zipball/ca6fd498e48f0f9f386930402a230013834107da",
+                    "reference": "ca6fd498e48f0f9f386930402a230013834107da",
                     "shasum": ""
                 },
                 "require": {
@@ -30,7 +30,7 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-16T01:27:53+00:00",
+                "time": "2026-10-16T16:59:42+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -46,7 +46,7 @@
                         "landing": "/monitors",
                         "views": "monitors",
                         "guest": false,
-                        "in-switcher": false,
+                        "in-switcher": true,
                         "requires-role": "admin",
                         "table-prefix": "monitors_",
                         "manifest": "Jcw\\Monitors\\Manifest"
