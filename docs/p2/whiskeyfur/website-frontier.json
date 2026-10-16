@@ -68,6 +68,74 @@
                     "proprietary"
                 ],
                 "description": "Frontier: a simulated world of anthros, land, trade and court, played a day at a time -- and run between days by a Lua script its masters write."
+            },
+            {
+                "name": "whiskeyfur/website-frontier",
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-frontier.git",
+                    "reference": "984b8cfd6ddc9fd7acdc46e002d0b94dd7340f15"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-frontier/zipball/984b8cfd6ddc9fd7acdc46e002d0b94dd7340f15",
+                    "reference": "984b8cfd6ddc9fd7acdc46e002d0b94dd7340f15",
+                    "shasum": ""
+                },
+                "require": {
+                    "ext-luasandbox": "*",
+                    "ext-pdo": "*",
+                    "illuminate/console": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.9"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T01:13:44+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Frontier\\FrontierServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "frontier",
+                        "name": "Frontier",
+                        "url": "/game",
+                        "landing": "/game/home",
+                        "views": "frontier",
+                        "guest": false,
+                        "in-switcher": true,
+                        "maintainable": true,
+                        "requires-role": "frontier",
+                        "table-prefix": "game_",
+                        "roles": {
+                            "frontier": "success",
+                            "frontier-gm": "warning"
+                        },
+                        "manifest": "Jcw\\Frontier\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Frontier\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Frontier\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Frontier: a simulated world of anthros, land, trade and court, played a day at a time -- and run between days by a Lua script its masters write."
             }
         ]
     }
