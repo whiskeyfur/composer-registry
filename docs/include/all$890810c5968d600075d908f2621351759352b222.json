@@ -1816,6 +1816,67 @@
                 ],
                 "description": "The MCP service: a Model Context Protocol endpoint for AI assistants, authenticating with its own access tokens rather than the site's session."
             },
+            "v1.1.0": {
+                "name": "whiskeyfur/website-mcp",
+                "version": "v1.1.0",
+                "version_normalized": "1.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-mcp.git",
+                    "reference": "c83bdf538b64cb8cabda7e914e7b69b1613522f4"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-mcp/zipball/c83bdf538b64cb8cabda7e914e7b69b1613522f4",
+                    "reference": "c83bdf538b64cb8cabda7e914e7b69b1613522f4",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.11"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T17:22:14+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Mcp\\McpServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "mcp",
+                        "name": "MCP",
+                        "url": "/mcp",
+                        "landing": "/mcp/tokens",
+                        "guest": true,
+                        "session": false,
+                        "in-switcher": true,
+                        "maintainable": true,
+                        "table-prefix": "mcp_",
+                        "manifest": "Jcw\\Mcp\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Mcp\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Mcp\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "The MCP service: a Model Context Protocol endpoint for AI assistants, authenticating with its own access tokens rather than the site's session."
+            },
             "dev-main": {
                 "name": "whiskeyfur/website-mcp",
                 "version": "dev-main",
@@ -1823,25 +1884,25 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-mcp.git",
-                    "reference": "7ef936ba55329caa55791ebf7344f61b29a26209"
+                    "reference": "c83bdf538b64cb8cabda7e914e7b69b1613522f4"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-mcp/zipball/7ef936ba55329caa55791ebf7344f61b29a26209",
-                    "reference": "7ef936ba55329caa55791ebf7344f61b29a26209",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-mcp/zipball/c83bdf538b64cb8cabda7e914e7b69b1613522f4",
+                    "reference": "c83bdf538b64cb8cabda7e914e7b69b1613522f4",
                     "shasum": ""
                 },
                 "require": {
                     "illuminate/database": "^13.0",
                     "illuminate/support": "^13.0",
                     "php": "^8.3",
-                    "whiskeyfur/jcw-app-kit": "^1.3"
+                    "whiskeyfur/jcw-app-kit": "^1.11"
                 },
                 "require-dev": {
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-16T01:27:38+00:00",
+                "time": "2026-10-16T17:22:14+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -1854,10 +1915,10 @@
                         "key": "mcp",
                         "name": "MCP",
                         "url": "/mcp",
-                        "landing": "/mcp",
+                        "landing": "/mcp/tokens",
                         "guest": true,
                         "session": false,
-                        "in-switcher": false,
+                        "in-switcher": true,
                         "maintainable": true,
                         "table-prefix": "mcp_",
                         "manifest": "Jcw\\Mcp\\Manifest"
