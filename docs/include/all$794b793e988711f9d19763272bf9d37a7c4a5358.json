@@ -1114,19 +1114,19 @@
                 ],
                 "description": "Frontier: a simulated world of anthros, land, trade and court, played a day at a time -- and run between days by a Lua script its masters write."
             },
-            "dev-main": {
+            "v1.0.3": {
                 "name": "whiskeyfur/website-frontier",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v1.0.3",
+                "version_normalized": "1.0.3.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-frontier.git",
-                    "reference": "94b816205786f3c80dc6ffc2eec1c5ba81233ee1"
+                    "reference": "cd07c8a1231590f2dd3bbd8e3ef28ff9a6ea6458"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-frontier/zipball/94b816205786f3c80dc6ffc2eec1c5ba81233ee1",
-                    "reference": "94b816205786f3c80dc6ffc2eec1c5ba81233ee1",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-frontier/zipball/cd07c8a1231590f2dd3bbd8e3ef28ff9a6ea6458",
+                    "reference": "cd07c8a1231590f2dd3bbd8e3ef28ff9a6ea6458",
                     "shasum": ""
                 },
                 "require": {
@@ -1141,7 +1141,75 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-16T01:27:58+00:00",
+                "time": "2026-10-16T16:29:45+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Frontier\\FrontierServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "frontier",
+                        "name": "Frontier",
+                        "url": "/game",
+                        "landing": "/game/home",
+                        "views": "frontier",
+                        "guest": false,
+                        "in-switcher": true,
+                        "maintainable": true,
+                        "requires-role": "frontier",
+                        "table-prefix": "game_",
+                        "roles": {
+                            "frontier": "success",
+                            "frontier-gm": "warning"
+                        },
+                        "manifest": "Jcw\\Frontier\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Frontier\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Frontier\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Frontier: a simulated world of anthros, land, trade and court, played a day at a time -- and run between days by a Lua script its masters write."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-frontier",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-frontier.git",
+                    "reference": "cd07c8a1231590f2dd3bbd8e3ef28ff9a6ea6458"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-frontier/zipball/cd07c8a1231590f2dd3bbd8e3ef28ff9a6ea6458",
+                    "reference": "cd07c8a1231590f2dd3bbd8e3ef28ff9a6ea6458",
+                    "shasum": ""
+                },
+                "require": {
+                    "ext-luasandbox": "*",
+                    "ext-pdo": "*",
+                    "illuminate/console": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.10"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T16:29:45+00:00",
                 "type": "library",
                 "extra": {
                     "laravel": {
@@ -2611,19 +2679,19 @@
                 ],
                 "description": "Spellcraft, a spellwright's workbench: spells and workings as matrices of components, with behaviour derived from how they are wired rather than written down. Keeps its own look."
             },
-            "dev-main": {
+            "v1.0.3": {
                 "name": "whiskeyfur/website-spellcraft",
-                "version": "dev-main",
-                "version_normalized": "dev-main",
+                "version": "v1.0.3",
+                "version_normalized": "1.0.3.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:whiskeyfur/website-spellcraft.git",
-                    "reference": "5e409275002c43d6124330a5390f157b850f5ae0"
+                    "reference": "bddae34ca7c0860f13326fe03242e5d865ef925a"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/whiskeyfur/website-spellcraft/zipball/5e409275002c43d6124330a5390f157b850f5ae0",
-                    "reference": "5e409275002c43d6124330a5390f157b850f5ae0",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-spellcraft/zipball/bddae34ca7c0860f13326fe03242e5d865ef925a",
+                    "reference": "bddae34ca7c0860f13326fe03242e5d865ef925a",
                     "shasum": ""
                 },
                 "require": {
@@ -2636,7 +2704,71 @@
                     "orchestra/testbench": "^11.0",
                     "phpunit/phpunit": "^12.0"
                 },
-                "time": "2026-10-16T01:27:57+00:00",
+                "time": "2026-10-16T16:29:48+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Spellcraft\\SpellcraftServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "spellcraft",
+                        "name": "Spellcraft",
+                        "url": "/saas",
+                        "landing": "/saas",
+                        "guest": false,
+                        "in-switcher": true,
+                        "maintainable": true,
+                        "requires-role": "saas",
+                        "roles": {
+                            "saas": "secondary"
+                        },
+                        "table-prefix": "spellcraft_",
+                        "manifest": "Jcw\\Spellcraft\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Spellcraft\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Spellcraft\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Spellcraft, a spellwright's workbench: spells and workings as matrices of components, with behaviour derived from how they are wired rather than written down. Keeps its own look."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-spellcraft",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-spellcraft.git",
+                    "reference": "bddae34ca7c0860f13326fe03242e5d865ef925a"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-spellcraft/zipball/bddae34ca7c0860f13326fe03242e5d865ef925a",
+                    "reference": "bddae34ca7c0860f13326fe03242e5d865ef925a",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/database": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.7"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T16:29:48+00:00",
                 "type": "library",
                 "extra": {
                     "laravel": {
