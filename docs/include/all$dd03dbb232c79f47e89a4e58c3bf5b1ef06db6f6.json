@@ -800,6 +800,144 @@
                 "description": "The Apache parser: point it at a server you have SSH access to and it answers what that server's Apache would do with a URL, rewrite rules and all."
             }
         },
+        "whiskeyfur/website-frontier": {
+            "v1.0.0": {
+                "name": "whiskeyfur/website-frontier",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-frontier.git",
+                    "reference": "70b5e70290e1d4e2b9d4aca91b5adca5b4193932"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-frontier/zipball/70b5e70290e1d4e2b9d4aca91b5adca5b4193932",
+                    "reference": "70b5e70290e1d4e2b9d4aca91b5adca5b4193932",
+                    "shasum": ""
+                },
+                "require": {
+                    "ext-luasandbox": "*",
+                    "ext-pdo": "*",
+                    "illuminate/console": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.9"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T01:02:22+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Frontier\\FrontierServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "frontier",
+                        "name": "Frontier",
+                        "url": "/game",
+                        "landing": "/game/home",
+                        "views": "frontier",
+                        "guest": false,
+                        "in-switcher": true,
+                        "maintainable": true,
+                        "requires-role": "frontier",
+                        "table-prefix": "game_",
+                        "roles": {
+                            "frontier": "success",
+                            "frontier-gm": "warning"
+                        },
+                        "manifest": "Jcw\\Frontier\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Frontier\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Frontier\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Frontier: a simulated world of anthros, land, trade and court, played a day at a time -- and run between days by a Lua script its masters write."
+            },
+            "dev-main": {
+                "name": "whiskeyfur/website-frontier",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:whiskeyfur/website-frontier.git",
+                    "reference": "70b5e70290e1d4e2b9d4aca91b5adca5b4193932"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/whiskeyfur/website-frontier/zipball/70b5e70290e1d4e2b9d4aca91b5adca5b4193932",
+                    "reference": "70b5e70290e1d4e2b9d4aca91b5adca5b4193932",
+                    "shasum": ""
+                },
+                "require": {
+                    "ext-luasandbox": "*",
+                    "ext-pdo": "*",
+                    "illuminate/console": "^13.0",
+                    "illuminate/support": "^13.0",
+                    "php": "^8.3",
+                    "whiskeyfur/jcw-app-kit": "^1.9"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^11.0",
+                    "phpunit/phpunit": "^12.0"
+                },
+                "time": "2026-10-16T01:02:22+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Jcw\\Frontier\\FrontierServiceProvider"
+                        ]
+                    },
+                    "jcw-app": {
+                        "key": "frontier",
+                        "name": "Frontier",
+                        "url": "/game",
+                        "landing": "/game/home",
+                        "views": "frontier",
+                        "guest": false,
+                        "in-switcher": true,
+                        "maintainable": true,
+                        "requires-role": "frontier",
+                        "table-prefix": "game_",
+                        "roles": {
+                            "frontier": "success",
+                            "frontier-gm": "warning"
+                        },
+                        "manifest": "Jcw\\Frontier\\Manifest"
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Jcw\\Frontier\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Jcw\\Frontier\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Frontier: a simulated world of anthros, land, trade and court, played a day at a time -- and run between days by a Lua script its masters write."
+            }
+        },
         "whiskeyfur/website-gurps": {
             "v1.0.0": {
                 "name": "whiskeyfur/website-gurps",
